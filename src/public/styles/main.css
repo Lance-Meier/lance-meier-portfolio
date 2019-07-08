@@ -1,0 +1,6 @@
+#hero {
+ background-image: url('../images/bg-hero.jpg');
+}
+.bg-filter {
+    background-color: rgba(0,0,0, .5);
+}
