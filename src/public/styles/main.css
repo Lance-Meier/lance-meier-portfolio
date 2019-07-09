@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 #hero {
  background-image: url('../images/bg-hero.jpg');
 }
+
 .bg-filter {
     background-color: rgba(0,0,0, .5);
 }
