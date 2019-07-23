@@ -5,43 +5,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./public/styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/images/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="./public/images/icons/site.webmanifest">
+  <link rel="mask-icon" href="./public/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <title>Lance Meier - Full Stack Developer & Designer</title>
 </head>
   <body>
-    <header id="hero" class="bg-cover bg-fixed">
-      <div class="bg-filter">
-        <div class="container mx-auto py-16">
-          <div class="flex flex-col justify-center text-white">
-            <div class="text-center my-32">
-              <h1 class="font-semibold text-6xl">Hello, I'm Lance</h1>
-              <h2 class="font-semibold text-5xl">Full Stack Developer & Designer</h2>              
-            </div>
+    <nav class="bg-transparent fixed w-full">
+      <div class="flex flex-row justify-between pt-4 px-16">
+        <div class="flex cursor-pointer" onclick="scrollToTop()">
+          <img src="./public/images/lm-icon.svg" alt="LM Logo" height="75px" width="75px">
+        </div>
+        <div class="flex items-center">
+          <a href="#footer">
+            <div class="btn btn-cta rounded-full cursor-pointer text-center text-white px-4 py-2">Hire Me</div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <header id="hero" class="bg-cover bg-no-repeat min-h-screen">
+      <div class="container md:w-3/4 mx-auto py-16">
+        <div class="flex flex-col text-white">
+          <div class="text-center my-20 md:my-32">
+            <h1 class="font-semibold text-4xl md:text-6xl mb-6">Hello, I'm Lance</h1>
+            <h2 class="font-semibold text-xl md:text-5xl">Full Stack Developer & Designer</h2>              
+          </div>
+          <div class="w-2/3 md:w-1/2 lg:w-2/5 mx-auto">
+            <a href="#about">
+              <div class="btn btn-info rounded-full cursor-pointer text-center py-2">Learn More</div>
+            </a>
           </div>
         </div>
       </div>
     </header>
-    <section>
-      <div>
-        <div class="container">
-
+    <section id="about" class="min-h-full">
+      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
+        <div class="flex flex-col">
+          <div class="text-center">
+            <h2 class="font-semibold text-xl text-2xl md:text-5xl text-white">About Me</h2>
+          </div>
+          <div class="flex flex-col md:flex-row mt-20 md:mt-40 mb-16 items-center">
+            <div id="portrait" class="w-1/3 md:w-1/5 mb-8 mx-8">
+              <img class="rounded-full" src="./public/images/portrait.jpg" alt="Lance Meier">
+            </div>
+            <div class="md:w-3/4 mx-8">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <a href="#services">
+              <img src="./public/images/angle_down_icon.svg" alt="angle down icon">
+            </a>
+          </div>
         </div>
       </div>      
+    </section>
+    <section id="services">
+      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
+        <div class="flex flex-col">
+          <div class="text-center">
+            <h2 class="font-semibold text-xl text-2xl md:text-5xl">What I Do</h2>
+          </div>
+          <div class="flex flex-col md:flex-row mt-16 md:mt-24 md:justify-between">
+            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 md:w-1/3 mx-auto md:mx-8">
+              <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/mobile_phone.svg" alt="mobile icon">
+              <div class="mt-8 text-center">
+                <h3 class="text-xl font-semibold">Full Stack Development</h3>
+                <hr class="border">
+                <p>Building your next cutting edge application, backed by clean code and core design principles.</p>
+              </div>
+            </div>
+            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 md:w-1/3 mx-auto md:mx-8">
+              <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/paint_roller.svg" alt="paint roller icon">
+              <div class="mt-8 text-center">
+                <h3 class="text-xl font-semibold">Modern Design</h3>
+                <hr class="border">
+                <p>Creating eye-catching experiences your audience loves.</p>
+              </div>
+            </div>
+            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 md:w-1/3 mx-auto md:mx-8">
+              <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/gem.svg" alt="gem icon">
+              <div class="mt-8 text-center">
+                <h3 class="text-xl font-semibold">Brand Identity</h3>
+                <hr class="border">
+                <p>Revealing your products' voice to be heard from all around.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <a href="#work">
+              <img src="./public/images/angle_down_icon.svg" alt="angle down icon">
+            </a>
+          </div>  
+        </div>
+      </div>      
+    </section>
+    <section id="work">
+      <div>
+        <div class="container">
+        </div>
+      </div>      
+    </section>
+    <section id="quote">
+      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
+        <div class="text-white">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </section>
     <section>
       <div>
         <div class="container">
-
+          <h2>Work</h2>
+          <div>
+            <ul>
+              <li>
+                <a href="https://konfio.mx/simulador-credito-empresarial" target="_blank">Styled Components, React Credit Simulator PHP backend user authentication, service workers, Laravel, SQL </a>
+              </li>
+              <li>
+                <a href="https://konfio.mx/prestamos" target="_blank">Credit Simulator JQuery Bootstrap Responsive Design</a>
+              </li>
+              <li>
+                <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">Responsive Design, Animations, CSS Shapes and Frames</a>
+              </li>
+              <li>
+                <a href="https://bikeamor.herokuapp.com" target="_blank">Interactive bicycle event concept angualar express mongodb node</a>
+              </li>
+              <li>
+                <a href="https://lance-meier.github.io/JS-Game-Hopper/" target="_blank">Vanilla JS with JS Canvas</a>
+              </li>
+              <li>
+                <a href="https://konfio.mx/credito-pyme-haz-crecer-tu-empresa" target="_blank">Tailwind CSS Responsive Landing Page</a>
+              </li>
+              <li>
+                <a href="https://konfio.mx/cita-con-el-sat" target="_blank">React based signup form. Inspired by Typeform</a>
+              </li>
+              <li>
+                <a href="https://React-Shopping-List--lance-meier.repl.co" target="_blank">React Todo List - State Management with Click Handling</a>
+              </li>
+              <li>
+                <a href="https://repl.it/@Lance_Meier/Lets-explore-Mars" target="_blank">JS Text-Based Console Game Switch Statements</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>      
     </section>
-    <section>
-      <div>
-        <div class="container">
-
-        </div>
-      </div>      
-    </section>
-    <footer>
+    <footer id="footer">
       <form action="https://formspree.io/email@domain.tld" method="POST">
         <input class="shadow" type="text" name="name">
         <input class="shadow" type="email" name="_replyto">
@@ -51,4 +165,5 @@
   </body>
 </html>
 
+<script src="./public/scripts/script.js"></script>
 <script src="https://kit.fontawesome.com/f2e1de25d3.js"></script>

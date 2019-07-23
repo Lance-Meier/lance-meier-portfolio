@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*Color Story*/
+$blue: #2980B9;
+$dark-grey: #2C3E50;
+$dark-red: #D24637;
+$light-blue: #3498DB;
+$light-grey: #ECF0F1;
+$red: #E74C3C;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $dark-grey;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+
+  &.btn-info {
+    background-color: $light-blue;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+  &.btn-cta {
+    background-color: $red;
+    &:hover {
+      background-color: $dark-red;
+    }
+  }
+}
+
+.fas {
+  color: $light-blue;
+}
+
+#hero {
+  background-image: url('../images/bg-hero@1x.jpg');
+  min-height: 100vh;
+
+  &:after{
+    content: "";
+    display: inline-block;
+    height: 50%;
+    background-color: $light-blue;
+    position: absolute;
+    width: 100%;
+    transform: skewY(3deg) translateY(-20%);
+    z-index: -1;
+  }
+}
+
+#quote {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../images/sydney-rae-wf6hq1VDMTo-unsplash.jpg')
+}
+
+#portrait {
+  img {
+    border: 5px solid $dark-grey;
+    transform: rotate(2deg);
+  }
+}
+
+#services {
+  background-color: $light-grey;
+}
+
+@media (max-width: 791px) {
+  #hero {
+    background-position-x: 60%;
+  }
+}
+
+@media (min-width: 792px) {
+  #hero {
+    background-position-y: 50%;
+  }
+}
