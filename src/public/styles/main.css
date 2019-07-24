@@ -22,13 +22,20 @@ body {
   background-color: #D24637;
 }
 
-.fas {
-  color: #3498DB;
+#services:before {
+  content: "";
+  display: inline-block;
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  transform: skewY(2deg) translateY(-80px);
+}
+#services:before {
+  background-color: #fff;
 }
 
 #hero {
   background-image: url("../images/bg-hero@1x.jpg");
-  min-height: 100vh;
 }
 #hero:after {
   content: "";
@@ -37,7 +44,7 @@ body {
   background-color: #3498DB;
   position: absolute;
   width: 100%;
-  transform: skewY(3deg) translateY(-20%);
+  transform: skewY(2deg) translateY(-20%);
   z-index: -1;
 }
 
@@ -54,7 +61,7 @@ body {
 }
 
 #services {
-  background-color: #ECF0F1;
+  background-image: linear-gradient(to bottom, #2c3e50, #4a4875, #884683, #c53c6e, #e74c3c);
 }
 
 @media (max-width: 791px) {
