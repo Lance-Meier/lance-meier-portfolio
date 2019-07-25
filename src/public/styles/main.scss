@@ -33,7 +33,7 @@ body {
 }
 
 #services {
-  &:before{
+  &:before {
     content: "";
     display: inline-block;
     height: 100px;
@@ -41,7 +41,7 @@ body {
     width: 100%;
     transform: skewY(2deg) translateY(-80px);
   }
-  &:before{
+  &:before {
     background-color: #fff;
   }
 }
@@ -65,7 +65,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url('../images/sydney-rae-wf6hq1VDMTo-unsplash.jpg')
+  height: 1000px;
+  background-image: url('../images/Group_2.jpg');
 }
 
 #portrait {
@@ -76,8 +77,22 @@ body {
 }
 
 #services {
-  //background-color: $dark-grey;
-  background-image: linear-gradient(to bottom, #2c3e50, #4a4875, #884683, #c53c6e, #e74c3c);
+  background-image: linear-gradient(to bottom right, #d24637, #b53966, #7f437a, #474670, #2c3e50);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s both;
 }
 
 @media (max-width: 791px) {
