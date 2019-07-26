@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+// Required Core Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 /*Color Story*/
 $blue: #2980B9;
 $dark-grey: #2C3E50;
@@ -62,11 +68,7 @@ body {
 }
 
 #quote {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 1000px;
-  background-image: url('../images/Group_2.jpg');
+  background: transparent;
 }
 
 #portrait {
