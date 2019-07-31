@@ -154,16 +154,8 @@ body {
   background-color: #D24637;
 }
 
-#services:before {
-  content: "";
-  display: inline-block;
-  height: 100px;
-  position: absolute;
-  width: 100%;
-  transform: skewY(2deg) translateY(-80px);
-}
-#services:before {
-  background-color: #fff;
+.glide__arrow {
+  background: white;
 }
 
 #hero {
@@ -191,6 +183,21 @@ body {
 
 #services {
   background-image: linear-gradient(to bottom right, #d24637, #b53966, #7f437a, #474670, #2c3e50);
+}
+#services:before {
+  content: "";
+  display: inline-block;
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  transform: skewY(2deg) translateY(-80px);
+}
+#services:before {
+  background-color: #fff;
+}
+
+#work {
+  background-color: #2C3E50;
 }
 
 @keyframes fadeInUp {
