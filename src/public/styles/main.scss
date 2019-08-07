@@ -14,6 +14,18 @@ $light-blue: #3498DB;
 $light-grey: #ECF0F1;
 $red: #E74C3C;
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -38,8 +50,12 @@ body {
   }
 }
 
+.fadeInUp {
+  animation: fadeInUp 1s both;
+}
+
 .glide__arrow {
-  background: white;
+  color: $dark-grey;
 }
 
 #hero {
@@ -49,16 +65,12 @@ body {
     content: "";
     display: inline-block;
     height: 50%;
-    background-color: $light-blue;
+    background-color: $dark-grey;
     position: absolute;
     width: 100%;
     transform: skewY(2deg) translateY(-20%);
     z-index: -1;
   }
-}
-
-#quote {
-  background: transparent;
 }
 
 #portrait {
@@ -82,27 +94,18 @@ body {
     background-color: #fff;
   }
 }
-
 #work {
-  background-color: $dark-grey;
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fadeInUp {
-  animation: fadeInUp 1s both;
+  background-color: $light-grey;
 }
 
 @media (max-width: 791px) {
+  .glide__arrow--left {
+    left: .5em;
+  }
+  .glide__arrow--right {
+    right: .5em;
+  }
+
   #hero {
     background-position-x: 60%;
   }

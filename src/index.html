@@ -15,7 +15,7 @@
   <title>Lance Meier - Full Stack Developer & Designer</title>
 </head>
   <body>
-    <nav class="bg-transparent fixed w-full z-10">
+    <nav class="bg-transparent hidden md:block fixed w-full z-10">
       <div class="flex flex-row justify-between pt-4 px-16">
         <div class="flex cursor-pointer" onclick="scrollToTop()">
           <img src="./public/images/lm-icon.svg" alt="LM Logo" height="75px" width="75px">
@@ -45,9 +45,7 @@
     <section id="about">
       <div class="container md:w-3/4 mx-auto py-8 md:py-16">
         <div class="flex flex-col">
-          <div class="text-center">
-            <h2 class="font-semibold text-xl text-2xl md:text-5xl text-white relative">About Me</h2>
-          </div>
+          <h2 class="font-semibold text-2xl md:text-5xl text-white relative text-center">About Me</h2>
           <div class="flex flex-col md:flex-row mt-20 md:mt-40 mb-16 items-center">
             <div id="portrait" class="w-1/3 md:w-1/5 mb-8 mx-8">
               <img class="rounded-full" src="./public/images/portrait.jpg" alt="Lance Meier">
@@ -58,7 +56,7 @@
           </div>
           <div class="mx-auto hidden md:block relative z-10">
             <a href="#services">
-              <img src="./public/images/angle_down_icon.svg" alt="angle down icon">
+              <i class="fas fa-chevron-down"></i>
             </a>
           </div>
         </div>
@@ -67,7 +65,7 @@
     <section id="services">
       <div class="container md:w-3/4 mx-auto pb-8 pt-16 md:pb-16 md:pt-20">
         <div class="flex flex-col">
-          <h2 class="font-semibold text-xl text-2xl md:text-5xl text-center text-white relative">What I Do</h2>
+          <h2 class="font-semibold text-2xl md:text-5xl text-center text-white relative">What I Do</h2>
           <div class="flex flex-col md:flex-row mt-16 md:mt-24 md:justify-between">
             <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/mobile_phone.svg" alt="mobile icon">
@@ -94,71 +92,188 @@
               </div>
             </div>
           </div>
-          <div class="mx-auto hidden md:block relative z-10">
+          <div class="mx-auto hidden md:block relative z-10 text-white">
             <a href="#quote">
-              <img src="./public/images/angle_down_icon.svg" alt="angle down icon">
+              <i class="fas fa-chevron-down"></i>
             </a>
           </div>  
         </div>
       </div>      
     </section>
-    <section id="quote" data-parallax="scroll" data-image-src="./public/images/Group_2.jpg">
-      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
-        <div class="text-white">
-          <p class="font-semibold text-xl md:text-3xl">My expertise isn't simply programming and building UIs.
-             <br><br> My goal is to listen to your needs and to develop purpose-driven solutions to the problems facing your business.
-             <br><br> By working as partners on your project I'll identify the optimal plan and tools for each unique solution.
-              <br><br> Let's collaborate and make something amazing together!</p>
+    <section id="quote" class="bg-transparent" data-parallax="scroll" data-image-src="./public/images/Group_4.jpg" data-bleed="40" data-position="top">
+      <div class="container md:w-3/4 mx-auto py-8 md:py-16 text-white">
+        <h2 class="font-semibold text-2xl md:text-5xl text-center">Mission</h2>
+        <div class="mx-auto w-5/6 md:w-full">
+          <p class="font-semibold text-xl md:text-3xl my-12">My aim goes beyond designing and programming. I want to be your partner in driving your organization forward:</p>
+          <ul class="font-semibold text-xl md:text-3xl mb-12">
+            <div class="flex flex-row items-center">
+                <i class="fas fa-pencil-alt mr-3 md:mr-6"></i>
+                <li class="my-4">I will promote ongoing project review to maintain relevant priorities.</li>
+            </div>
+            <div class="flex flex-row items-center">
+                <i class="far fa-lightbulb mr-4 md:mr-8"></i>
+                <li class="my-4">I will develop purpose-driven solutions to the challenges facing your project.</li>
+            </div>
+            <div class="flex flex-row items-center">
+                <i class="far fa-check-square mr-4 md:mr-8"></i>
+                <li class="my-4">I will identify the milestones and optimal tools for each unique solution.</li>
+            </div>
+          </ul>
         </div>
+        <div class="mx-auto hidden md:block relative z-10 text-white text-center">
+          <a href="#work">
+            <i class="fas fa-chevron-down"></i>
+          </a>
+        </div>  
       </div>
     </section>
     <section id="work">
-      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
-      <h2 class="font-semibold text-xl text-2xl md:text-5xl mb-10 text-center text-white">Work</h2>
+      <div class="container md:w-3/4 mx-auto pt-8 pb-20 md:pt-16">
+      <h2 class="font-semibold text-2xl md:text-5xl my-10 text-center">Portfolio</h2>
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide text-center">
-                <div class="bg-white py-10 rounded w-1/2 mx-auto">
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Konfío.mx: Loan Simulator 1</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
                   <a href="https://konfio.mx/simulador-credito-empresarial" target="_blank">
-                    <img class="mx-auto" src="./public/images/react_loan_simulator.jpg" alt="react loan simulator" height="300px" width="300px">
+                    <img class="px-8 mx-auto" src="./public/images/work_1.jpg" alt="React loan simulator">
                   </a>
-                  <p class="my-4">Small Business Loan Simulator with User Creation</p>
-                  <hr class=" w-3/4 mx-auto border my-2">
-                  <div class="flex flex-row justify-center">
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-8 md:mt-0">
                       <div>
-                        <i class="fab fa-react fa-2x mx-6"></i>
+                        <i class="fab fa-react fa-lg mx-6"></i>
                         <p>React</p>
                       </div>
                       <div>
-                        <i class="fab fa-php fa-2x mx-6"></i>
+                        <i class="fab fa-php fa-lg mx-6"></i>
                         <p>Zend 2</p>
                       </div>
                       <div>
-                        <i class="fab fa-laravel fa-2x mx-6"></i>
+                        <i class="fab fa-laravel fa-lg mx-6"></i>
                         <p>Laravel</p>
                       </div>
                       <div>
-                        <i class="fas fa-database fa-2x mx-6"></i>
+                        <i class="fas fa-database fa-lg mx-6"></i>
                         <p>mySQL</p>
                      </div>
                   </div>
                 </div>
               </li>
               <li class="glide__slide text-center">
-                <a href="https://konfio.mx/prestamos" target="_blank">Credit Simulator JQuery Bootstrap Responsive Design</a>
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Konfio.mx: Responsive Landing Page with CSS Shapes and Animations</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
+                  <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">
+                    <img class="px-8 mx-auto" src="./public/images/work_3.jpg" alt="Responsive Landing Page with CSS Shapes and Animations">
+                  </a>
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-24 md:mt-0">
+                      <div>
+                        <i class="fab fa-bootstrap fa-lg mx-8"></i>
+                        <p>Bootstrap</p>
+                      </div>
+                      <div>
+                        <i class="fab fa-sass fa-lg mx-8"></i>
+                        <p>Sass</p>
+                      </div>
+                  </div>
+                </div>
               </li>
               <li class="glide__slide text-center">
-                <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">Responsive Design, Animations, CSS Shapes and Frames</a>
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Konfío.mx: Loan Simulator 2</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
+                  <a href="https://konfio.mx/simulador-credito-empresarial" target="_blank">
+                    <img class="px-8 mx-auto" src="./public/images/work_2.jpg" alt="Loan Simulator 2">
+                  </a>
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-24 md:mt-0">
+                      <div>
+                        <i class="fab fa-bootstrap fa-lg mx-6"></i>
+                        <p>Bootstrap</p>
+                      </div>
+                      <div>
+                        <i class="fab fa-js fa-lg mx-6"></i>
+                        <p>JQuery</p>
+                      </div>
+                      <div>
+                        <i class="fab fa-php fa-lg mx-6"></i>
+                        <p>Zend 2</p>
+                      </div>
+                      <div>
+                        <i class="fas fa-database fa-lg mx-6"></i>
+                        <p>mySQL</p>
+                      </div>
+                  </div>
+                </div>
               </li>
               <li class="glide__slide text-center">
-                <a href="https://bikeamor.herokuapp.com" target="_blank">Interactive bicycle event concept angualar express mongodb node</a>
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Konfío.mx: Responsive Social Proof Landing Page</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
+                  <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">
+                    <img class="px-8 mx-auto" src="./public/images/work_4.jpg" alt="Responsive Social Proof Landing Page">
+                  </a>
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-24 md:mt-0">
+                    <div>
+                      <i class="fab fa-react fa-lg mx-8"></i>
+                      <p>React</p>
+                    </div>
+                    <div>
+                      <i class="fab fa-css3-alt fa-lg mx-8"></i>
+                      <p>Tailwind</p>
+                    </div>    
+                  </div>
+                </div>
               </li>
               <li class="glide__slide text-center">
-                <a href="https://lance-meier.github.io/JS-Game-Hopper/" target="_blank">Vanilla JS with JS Canvas</a>
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Personal: Bike Amor</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
+                  <a href="https://bikeamor.herokuapp.com" target="_blank">
+                    <img class="px-8 mx-auto" src="./public/images/work_5.jpg" alt="Personal: Bike Amor">
+                  </a>
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-24 md:mt-0">
+                    <div>
+                      <i class="fab fa-angular fa-lg mx-8"></i>
+                      <p>Angular</p>
+                    </div>
+                    <div>
+                      <i class="fab fa-node-js fa-lg mx-8"></i>
+                      <p>Node.js</p>
+                    </div>
+                    <div>
+                      <i class="fas fa-database fa-lg mx-8"></i>
+                      <p>MongoDB</p>
+                    </div>
+                    <div>
+                      <i class="fab fa-css3-alt fa-lg mx-8"></i>
+                      <p>Bulma</p>
+                    </div>    
+                  </div>
+                </div>
               </li>
               <li class="glide__slide text-center">
-                <a href="https://konfio.mx/credito-pyme-haz-crecer-tu-empresa" target="_blank">Tailwind CSS Responsive Landing Page</a>
+                <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto">Personal: Hopper</h3>
+                <div class="bg-white py-4 my-2 rounded md:w-1/3 mx-auto md:shadow-lg">
+                  <a href="https://lance-meier.github.io/JS-Game-Hopper/" target="_blank">
+                    <img class="px-8 mx-auto" src="./public/images/work_6.jpg" alt="Personal: Bike Amor">
+                  </a>
+                  <hr class="hidden md:block w-3/4 mx-auto border my-6">
+                  <div class="flex flex-row justify-center mt-24 md:mt-0">
+                    <div>
+                      <i class="fab fa-js fa-lg mx-8"></i>
+                      <p>Vanilla JS</p>
+                    </div>
+                    <div>
+                      <i class="fab fa-html5 fa-lg mx-8"></i>
+                      <p>HTML Canvas</p>
+                    </div>
+                    <div>
+                      <i class="fab fa-css3-alt fa-lg mx-8"></i>
+                      <p>CSS</p>
+                    </div>    
+                  </div>
+                </div>
               </li>
               <li class="glide__slide text-center">
                 <a href="https://konfio.mx/cita-con-el-sat" target="_blank">React based signup form. Inspired by Typeform</a>
@@ -171,26 +286,32 @@
               </li>
             </ul>
           </div>
-          <div class="glide__arrows" data-glide-el="controls">
-            <img src="./public/images/angle_left_icon.svg" class="glide__arrow glide__arrow--left" data-glide-dir="<">
-            <img src="./public/images/angle_right_icon.svg" class=" glide__arrow glide__arrow--right" data-glide-dir=">">
+          <div class="glide__arrows text-white" data-glide-el="controls">
+            <i class="fas fa-chevron-left fa-md glide__arrow glide__arrow--left" data-glide-dir="<"></i>
+            <i class="fas fa-chevron-right fa-md glide__arrow glide__arrow--right" data-glide-dir=">"></i>
           </div>
         </div>
       </div>
     </section>
+    <section id="#contact">
+      <div class="container md:w-3/4 mx-auto py-16 flex flex-col items-center">
+        <h2 class="flex font-semibold text-2xl md:text-5xl text-center">Let's Build Something!</h2>
+        <form class="flex flex-col" action="https://formspree.io/email@domain.tld" method="POST">
+          <input class="shadow" type="text" name="name">
+          <input class="shadow" type="email" name="_replyto">
+          <input class="shadow" type="submit" value="Send">
+        </form>
+      </div>
+    </section>
     <footer id="footer">
-      <form action="https://formspree.io/email@domain.tld" method="POST">
-        <input class="shadow" type="text" name="name">
-        <input class="shadow" type="email" name="_replyto">
-        <input class="shadow" type="submit" value="Send">
-      </form>
+
     </footer>
   </body>
 </html>
 
 <script src="./public/scripts/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./public/scripts/parallax.js-1.5.0/parallax.js"></script>
+<script src="node_modules/jquery-parallax.js/parallax.js"></script>
 <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 <script>
   new Glide('.glide').mount()
