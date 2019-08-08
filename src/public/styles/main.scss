@@ -54,8 +54,8 @@ body {
   animation: fadeInUp 1s both;
 }
 
-.glide__arrow {
-  color: $dark-grey;
+.glide__bullets {
+  bottom: -2em;
 }
 
 #hero {
@@ -81,7 +81,7 @@ body {
 }
 
 #services {
-  background-image: linear-gradient(to bottom right, #d24637, #b53966, #7f437a, #474670, #2c3e50);
+  background-image: linear-gradient(to left top, #2c3e50, #325370, #366992, #3780b6, #3498db);
   &:before {
     content: "";
     display: inline-block;
@@ -95,16 +95,10 @@ body {
   }
 }
 #work {
-  background-color: $light-grey;
+  background-color: $dark-grey;
 }
 
 @media (max-width: 791px) {
-  .glide__arrow--left {
-    left: .5em;
-  }
-  .glide__arrow--right {
-    right: .5em;
-  }
 
   #hero {
     background-position-x: 60%;

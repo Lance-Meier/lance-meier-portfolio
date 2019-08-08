@@ -168,8 +168,8 @@ body {
   animation: fadeInUp 1s both;
 }
 
-.glide__arrow {
-  color: #2C3E50;
+.glide__bullets {
+  bottom: -2em;
 }
 
 #hero {
@@ -192,7 +192,7 @@ body {
 }
 
 #services {
-  background-image: linear-gradient(to bottom right, #d24637, #b53966, #7f437a, #474670, #2c3e50);
+  background-image: linear-gradient(to left top, #2c3e50, #325370, #366992, #3780b6, #3498db);
 }
 #services:before {
   content: "";
@@ -207,18 +207,10 @@ body {
 }
 
 #work {
-  background-color: #ECF0F1;
+  background-color: #2C3E50;
 }
 
 @media (max-width: 791px) {
-  .glide__arrow--left {
-    left: 0.5em;
-  }
-
-  .glide__arrow--right {
-    right: 0.5em;
-  }
-
   #hero {
     background-position-x: 60%;
   }
