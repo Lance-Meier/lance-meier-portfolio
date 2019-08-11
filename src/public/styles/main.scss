@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+// Required Core Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+/*Color Story*/
+$blue: #2980B9;
+$dark-grey: #2C3E50;
+$dark-red: #D24637;
+$light-blue: #3498DB;
+$light-grey: #ECF0F1;
+$red: #E74C3C;
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $dark-grey;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  &.btn-info {
+    background-color: $light-blue;
+    &:hover {
+      background-color: $blue;
+    }
+  }
+  &.btn-cta {
+    background-color: $red;
+    &:hover {
+      background-color: $dark-red;
+    }
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp .8s both;
+}
+
+.glide__bullets {
+  bottom: -2em;
+}
+
+#contact, #footer {
+  background-color: $dark-red;
+}
+
+#contact {
+  input[type='submit'] {
+    background-color: $light-grey;
+  }
+}
+
+#hero {
+  background-image: url('../images/bg_hero.jpg');
+  
+  &:after{
+    content: "";
+    display: inline-block;
+    height: 50%;
+    background-color: $dark-grey;
+    position: absolute;
+    width: 100%;
+    transform: skewY(2deg) translateY(-20%);
+    z-index: -1;
+  }
+}
+
+#portrait {
+  img {
+    border: 5px solid $dark-grey;
+    transform: rotate(2deg);
+  }
+}
+
+#services {
+  background-image: linear-gradient(to left top, #2c3e50, #325370, #366992, #3780b6, #3498db);
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    transform: skewY(2deg) translateY(-80px);
+  }
+  &:before {
+    background-color: #fff;
+  }
+}
+#work {
+  background-color: $dark-grey;
+}
+
+@media (max-width: 791px) {
+  #hero {
+    background-position-x: 60%;
+  }
+}
+
+@media (min-width: 792px) {
+  #cards {
+    min-height: 24.5rem;
+  }
+
+  #hero {
+    background-position-y: 50%;
+  }
+}
