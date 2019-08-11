@@ -165,15 +165,23 @@ body {
 }
 
 .fadeInUp {
-  animation: fadeInUp 1s both;
+  animation: fadeInUp 0.8s both;
 }
 
 .glide__bullets {
   bottom: -2em;
 }
 
+#contact, #footer {
+  background-color: #D24637;
+}
+
+#contact input[type=submit] {
+  background-color: #ECF0F1;
+}
+
 #hero {
-  background-image: url("../images/bg-hero@1x.jpg");
+  background-image: url("../images/bg-hero.jpg");
 }
 #hero:after {
   content: "";
@@ -216,6 +224,10 @@ body {
   }
 }
 @media (min-width: 792px) {
+  #cards {
+    min-height: 24.5rem;
+  }
+
   #hero {
     background-position-y: 50%;
   }

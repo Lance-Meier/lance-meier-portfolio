@@ -25,7 +25,6 @@ $red: #E74C3C;
   }
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -51,15 +50,25 @@ body {
 }
 
 .fadeInUp {
-  animation: fadeInUp 1s both;
+  animation: fadeInUp .8s both;
 }
 
 .glide__bullets {
   bottom: -2em;
 }
 
+#contact, #footer {
+  background-color: $dark-red;
+}
+
+#contact {
+  input[type='submit'] {
+    background-color: $light-grey;
+  }
+}
+
 #hero {
-  background-image: url('../images/bg-hero@1x.jpg');
+  background-image: url('../images/bg-hero.jpg');
   
   &:after{
     content: "";
@@ -99,13 +108,16 @@ body {
 }
 
 @media (max-width: 791px) {
-
   #hero {
     background-position-x: 60%;
   }
 }
 
 @media (min-width: 792px) {
+  #cards {
+    min-height: 24.5rem;
+  }
+
   #hero {
     background-position-y: 50%;
   }

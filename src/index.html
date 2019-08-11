@@ -15,14 +15,14 @@
   <title>Lance Meier - Full Stack Developer & Designer</title>
 </head>
   <body>
-    <nav class="bg-transparent hidden md:block fixed w-full z-10">
+    <nav class="hidden md:block bg-transparent fixed w-full z-10">
       <div class="flex flex-row justify-between pt-4 px-16">
         <div class="flex cursor-pointer" onclick="scrollToTop()">
           <img src="./public/images/lm-icon.svg" alt="LM Logo" height="75px" width="75px">
         </div>
         <div class="flex items-center">
           <a href="#footer">
-            <div class="btn btn-cta rounded-full cursor-pointer text-center text-white px-4 py-2">Hire Me</div>
+            <div class="btn btn-cta cursor-pointer rounded-full text-center text-white px-4 py-2">Hire Me</div>
           </a>
         </div>
       </div>
@@ -36,7 +36,7 @@
           </div>
           <div class="w-2/3 md:w-1/2 lg:w-2/5 mx-auto">
             <a href="#about">
-              <div class="btn btn-info rounded-full cursor-pointer text-center py-2">Learn More</div>
+              <div class="btn btn-info cursor-pointer rounded-full text-center py-2">Learn More</div>
             </a>
           </div>
         </div>
@@ -45,16 +45,18 @@
     <section id="about">
       <div class="container md:w-3/4 mx-auto py-8 md:py-16">
         <div class="flex flex-col">
-          <h2 class="font-semibold text-2xl md:text-5xl text-white relative text-center">About Me</h2>
-          <div class="flex flex-col md:flex-row mt-20 md:mt-40 mb-16 items-center">
+          <h2 class="font-semibold relative text-2xl md:text-5xl text-white text-center">About Me</h2>
+          <div class="flex flex-col md:flex-row items-center mt-20 md:mt-40 mb-16">
             <div id="portrait" class="w-1/3 md:w-1/5 mb-8 mx-8">
               <img class="rounded-full" src="./public/images/portrait.jpg" alt="Lance Meier">
             </div>
             <div class="md:w-3/4 mx-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Hi! I'm a full stack developer with an eye for UI design and business development. I was Raised in the e-commerce world and bootcamp trained. My extensive experience makes me a business-minded, detail oriented, adaptable problem-solver with a get-things-done attitude. I'm for hire and seeking to expand my experience through new technical challenges.</p>
+              <br>
+              <p>I build eye-catching fluid products with the latest modern technological platforms. Reducing user friction and promoting a smooth and intuitive user experience is a goal I’m driven to achieve in each project I take on. In building these rich solutions, I strive to and to produce some serious quality code that will make your users’ lives easier!</p>
             </div>
           </div>
-          <div class="mx-auto hidden md:block relative z-10">
+          <div class="hidden md:block relative z-10 mx-auto">
             <a href="#services">
               <i class="fas fa-chevron-down"></i>
             </a>
@@ -62,12 +64,12 @@
         </div>
       </div>      
     </section>
-    <section id="services">
+    <section id="services" class="relative">
       <div class="container md:w-3/4 mx-auto pb-8 pt-16 md:pb-16 md:pt-20">
         <div class="flex flex-col">
           <h2 class="font-semibold text-2xl md:text-5xl text-center text-white relative">What I Do</h2>
-          <div class="flex flex-col md:flex-row mt-16 md:mt-24 md:justify-between">
-            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+          <div id="cards" class="flex flex-col md:flex-row mt-16 md:mt-24 md:justify-start">
+            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/mobile_phone.svg" alt="mobile icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Full Stack Development</h3>
@@ -75,7 +77,7 @@
                 <p>Building your next cutting edge application, backed by clean code and core design principles.</p>
               </div>
             </div>
-            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/paint_roller.svg" alt="paint roller icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Modern Design</h3>
@@ -83,7 +85,7 @@
                 <p>Creating eye-catching experiences your audience loves,</p>
               </div>
             </div>
-            <div class="flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/gem.svg" alt="gem icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Brand Identity</h3>
@@ -104,7 +106,7 @@
       <div class="container md:w-3/4 mx-auto py-8 md:py-16 text-white">
         <h2 class="font-semibold text-2xl md:text-5xl text-center">Mission</h2>
         <div class="mx-auto w-5/6 md:w-full">
-          <p class="font-semibold text-xl md:text-3xl my-12">My aim goes beyond designing and programming. I want to be your partner in driving your organization forward:</p>
+          <h3 class="font-semibold text-xl md:text-3xl my-12">My aim goes beyond designing and programming. I want to be your partner in driving your organization forward:</h3>
           <ul class="font-semibold text-xl md:text-3xl mb-12">
             <div class="flex flex-row items-center">
               <i class="far fa-lightbulb mr-4 md:mr-8"></i>
@@ -275,17 +277,6 @@
                   </div>
                 </div>
               </li>
-              <!-- Fill in Later
-                <li class="glide__slide text-center">
-                  <a href="https://konfio.mx/cita-con-el-sat" target="_blank">React based signup form. Inspired by Typeform</a>
-                </li>
-                <li class="glide__slide text-center">
-                  <a href="https://React-Shopping-List--lance-meier.repl.co" target="_blank">React Todo List - State Management with Click Handling</a>
-                </li>
-                <li class="glide__slide text-center">
-                  <a href="https://repl.it/@Lance_Meier/Lets-explore-Mars" target="_blank">JS Text-Based Console Game Switch Statements</a>
-                </li>
-              -->
             </ul>
           </div>
           <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -299,24 +290,51 @@
         </div>
       </div>
     </section>
-    <section id="#contact">
-      <div class="container md:w-3/4 mx-auto py-16 flex flex-col items-center">
-        <h2 class="flex font-semibold text-2xl md:text-5xl text-center">Let's Build Something!</h2>
-        <form id="contact-form" class="flex flex-col" action="https://formspree.io/email@domain.tld" method="POST">
-          <input class="shadow" type="text" name="name" placeholder="Name">
-          <input class="shadow" type="email" name="_replyto" placeholder="E-mail">
-          <textarea class="shadow" name="message" placeholder="Message"></textarea>
-          <input class="shadow" type="submit" value="Send">
-        </form>
+    <section id="contact">
+      <div class="container md:w-3/4 mx-auto pt-16 pb-8 flex flex-col items-center">
+        <h2 class="flex font-semibold text-2xl md:text-5xl text-center text-white">Let's Build Something!</h2>
+        <div class="flex flex-col md:flex-row justify-between mt-8 w-full md:w-2/3">
+          <h3></h3>
+          <form id="contact-form" class="flex flex-col w-5/6 mx-auto md:w-1/2" action="https://formspree.io/lance@lancemeier.com" method="POST">
+            <input class="shadow p-2 rounded" type="text" name="name" placeholder="Name">
+            <input class="shadow mt-4 p-2 rounded" type="email" name="_replyto" placeholder="E-mail">
+            <textarea class="shadow mt-4 p-2 rounded" name="message" rows="4" placeholder="Message"></textarea>
+            <input class="shadow mt-4 p-2 rounded cursor-pointer" type="submit" value="Send">
+          </form>
+          <div class="flex flex-col text-white">
+            <div class="flex text-center hidden md:block">
+              <h3>Learn More:</h3>
+            </div>
+            <div class="flex flex-row mt-8 justify-center">
+              <div class="mr-8">
+                <a href="https://www.linkedin.com/in/lance-meier/">
+                  <i class="fab fa-linkedin fa-2x"></i>            
+                </a>
+              </div>
+              <div class="mr-8">
+                <a href="https://github.com/Lance-Meier">
+                  <i class="fab fa-github fa-2x"></i>            
+                </a>
+              </div>
+              <div>
+                <a href="https://medium.com/@lancemeier">
+                  <i class="fab fa-medium fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer id="footer">
-
+      <p class="text-center text-white py-4">&#169; Lance Meier <span><script type="text/javascript">
+        document.write(new Date().getFullYear());
+      </script></span>
+      </p>
     </footer>
   </body>
 </html>
 
-<script src="./public/scripts/script.js"></script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/jquery-parallax.js/parallax.js"></script>
 <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
@@ -325,10 +343,11 @@
     type: 'slider',
     startAt: 0,
     focusAt: 'center',
-    autoplay: 3500,
+    autoplay: 2500,
     perView: 1,
   });
   glide.mount();
   new Glide('.glide').mount()
 </script>
+<script src="./public/scripts/script.js"></script>
 <script src="https://kit.fontawesome.com/f2e1de25d3.js"></script>
