@@ -190,7 +190,6 @@ body {
   background-color: #2C3E50;
   position: absolute;
   width: 100%;
-  transform: skewY(2deg) translateY(-20%);
   z-index: -1;
 }
 
@@ -222,6 +221,10 @@ body {
   #hero {
     background-position-x: 60%;
   }
+  #hero:after {
+    height: 60%;
+    transform: skewY(2deg) translateY(-10%);
+  }
 }
 @media (min-width: 792px) {
   #cards {
@@ -230,6 +233,16 @@ body {
 
   #hero {
     background-position-y: 50%;
+  }
+  #hero:after {
+    height: 50%;
+    transform: skewY(2deg) translateY(-20%);
+  }
+}
+@media (min-width: 1400px) {
+  #hero:after {
+    height: 80%;
+    transform: skewY(2deg) translateY(-25%);
   }
 }
 

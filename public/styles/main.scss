@@ -77,7 +77,6 @@ body {
     background-color: $dark-grey;
     position: absolute;
     width: 100%;
-    transform: skewY(2deg) translateY(-20%);
     z-index: -1;
   }
 }
@@ -110,6 +109,10 @@ body {
 @media (max-width: 791px) {
   #hero {
     background-position-x: 60%;
+    &:after{
+      height: 60%;
+      transform: skewY(2deg) translateY(-10%);
+    }
   }
 }
 
@@ -120,5 +123,18 @@ body {
 
   #hero {
     background-position-y: 50%;
+    &:after {
+      height: 50%;
+      transform: skewY(2deg) translateY(-20%);
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero {
+    &:after {
+      height: 80%;
+      transform: skewY(2deg) translateY(-25%);
+    }
   }
 }
