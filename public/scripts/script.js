@@ -10,7 +10,7 @@ function animateElements() {
     elements.forEach(function (item, index) {
       setTimeout(function () {
         if (!item.classList.contains('fadeInUp')) {
-          item.classList.remove('md:hidden');
+          item.classList.remove('lg:hidden');
           item.classList.add('fadeInUp');            
         }
       }, index * 300)
@@ -19,7 +19,7 @@ function animateElements() {
 }
 
 window.onscroll = function() {
-  if(window.innerWidth > 791) {
+  if(window.innerWidth >= 1024) {
     animateElements();
   }
 };

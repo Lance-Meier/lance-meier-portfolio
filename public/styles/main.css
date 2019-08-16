@@ -182,6 +182,8 @@ body {
 
 #hero {
   background-image: url("../images/bg_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #hero:after {
   content: "";
@@ -196,6 +198,12 @@ body {
 #portrait img {
   border: 5px solid #2C3E50;
   transform: rotate(2deg);
+}
+
+#quote {
+  background-image: url("../images/bg_quote.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #services {

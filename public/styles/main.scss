@@ -69,6 +69,8 @@ body {
 
 #hero {
   background-image: url('../images/bg_hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   
   &:after{
     content: "";
@@ -86,6 +88,12 @@ body {
     border: 5px solid $dark-grey;
     transform: rotate(2deg);
   }
+}
+
+#quote {
+  background-image: url('../images/bg_quote.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #services {

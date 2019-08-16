@@ -15,7 +15,7 @@
   <title>Lance Meier - Full Stack Developer & Designer</title>
 </head>
   <body>
-    <nav class="hidden md:block bg-transparent fixed w-full z-10">
+    <nav class="hidden lg:block bg-transparent fixed w-full z-10">
       <div class="flex flex-row justify-between pt-4 px-16">
         <div class="flex cursor-pointer" onclick="scrollToTop()">
           <img src="./public/images/lm_icon.svg" alt="LM Logo" height="75" width="75">
@@ -28,11 +28,11 @@
       </div>
     </nav>
     <header id="hero" class="bg-cover bg-no-repeat min-h-screen">
-      <div class="container md:w-3/4 mx-auto py-16">
+      <div class="container lg:w-3/4 mx-auto py-16">
         <div class="flex flex-col text-white">
           <div class="text-center my-20 md:my-32">
             <h1 class="font-semibold text-4xl md:text-6xl mb-6">Hello, I'm Lance</h1>
-            <h2 class="font-semibold text-xl md:text-5xl">Full Stack Developer & Designer</h2>              
+            <h2 class="font-semibold text-xl md:text-4xl">Full Stack Developer & Designer</h2>              
           </div>
           <div class="w-2/3 md:w-1/2 lg:w-2/5 mx-auto">
             <a href="#about">
@@ -43,15 +43,15 @@
       </div>
     </header>
     <section id="about">
-      <div class="container md:w-3/4 mx-auto py-8 md:py-16">
+      <div class="container lg:w-3/4 mx-auto py-8 md:py-16">
         <div class="flex flex-col">
           <h2 class="font-semibold relative text-2xl md:text-5xl text-white text-center">About Me</h2>
           <div class="flex flex-col md:flex-row items-center mt-10 md:mt-40 mb-16">
             <div id="portrait" class="w-1/3 md:w-1/5 mb-8 mx-8">
               <img class="rounded-full" src="./public/images/portrait.jpg" alt="Lance Meier">
             </div>
-            <div class="md:w-3/4 mx-8">
-              <p>Hi! I'm a full stack developer with an eye for UI design and business development. I was Raised in the e-commerce world and bootcamp trained. My extensive experience makes me a business-minded, detail oriented, adaptable problem-solver with a get-things-done attitude. I'm for hire and seeking to expand my experience through new technical challenges.</p>
+            <div class="md:w-3/4 mx-8 text-lg">
+              <p>Hi! I'm a full stack developer with an eye for UI design and business development. I was Raised in the e-commerce world and programming bootcamp trained. My extensive experience makes me a business-minded, detail oriented, adaptable problem-solver with a get-things-done attitude. I'm for hire and seeking to expand my experience through new technical challenges.</p>
               <br>
               <p>I build eye-catching fluid products with the latest modern technological platforms. Reducing user friction and promoting a smooth and intuitive user experience is a goal I’m driven to achieve in each project I take on. In building these rich solutions, I strive to and to produce some serious quality code that will make your users’ lives easier!</p>
             </div>
@@ -65,11 +65,11 @@
       </div>      
     </section>
     <section id="services" class="relative">
-      <div class="container md:w-3/4 mx-auto pb-8 pt-16 md:pb-16 md:pt-20">
+      <div class="container lg:w-3/4 mx-auto pb-8 pt-16 md:pb-16 md:pt-20">
         <div class="flex flex-col">
           <h2 class="font-semibold text-2xl md:text-5xl text-center text-white relative">What I Do</h2>
           <div id="cards" class="flex flex-col md:flex-row mt-16 md:mt-24 md:justify-start">
-            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+            <div class="block lg:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/mobile_phone.svg" alt="mobile icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Full Stack Development</h3>
@@ -77,7 +77,7 @@
                 <p>Building your next cutting edge application, backed by clean code and core design principles.</p>
               </div>
             </div>
-            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+            <div class="block lg:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/paint_roller.svg" alt="paint roller icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Modern Design</h3>
@@ -85,7 +85,7 @@
                 <p>Creating eye-catching experiences your audience loves,</p>
               </div>
             </div>
-            <div class="block md:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
+            <div class="block lg:hidden card flex flex-col mb-16 bg-white shadow-md rounded-lg p-6 w-5/6 lg:w-1/3 mx-auto md:mx-6">
               <img class="mx-auto w-1/3 md:w-1/2" src="./public/images/gem.svg" alt="gem icon">
               <div class="mt-8 text-center">
                 <h3 class="text-xl font-semibold">Brand Identity</h3>
@@ -102,23 +102,23 @@
         </div>
       </div>      
     </section>
-    <section id="quote" class="bg-transparent" data-parallax="scroll" data-image-src="./public/images/bg_quote.jpg" data-bleed="40" data-position="top">
-      <div class="container md:w-3/4 mx-auto py-8 md:py-16 text-white">
+    <section id="quote">
+      <div class="container lg:w-3/4 mx-auto py-8 md:py-16 text-white">
         <h2 class="font-semibold text-2xl md:text-5xl text-center">Mission</h2>
-        <div class="mx-auto w-5/6 md:w-full">
-          <h3 class="font-semibold text-xl md:text-3xl my-12">My aim goes beyond designing and programming. I want to be your partner in driving your organization forward:</h3>
-          <ul class="font-semibold text-xl md:text-3xl mb-12">
-            <li class="flex flex-row items-center">
+        <div class="mx-auto w-5/6 lg:w-full">
+          <h3 class="font-semibold text-xl md:text-3xl my-12">My aim goes beyond designing and programming. I want to be your partner in driving your organization forward.</h3>
+          <ul class="flex flex-col font-semibold text-xl md:text-3xl mb-12">
+            <li class="flex flex-row items-baseline">
               <i class="far fa-lightbulb mr-4 md:mr-8"></i>
-              <p class="my-4">I will develop purpose-driven solutions to the challenges facing your project.</p>
+              <p class="my-4 text-2xl">I'll develop purpose-driven solutions to the challenges facing your project.</p>
             </li>
-            <li class="flex flex-row items-center">
-              <i class="far fa-check-square mr-4 md:mr-8"></i>
-              <p class="my-4">I will identify the milestones and optimal tools for each unique solution.</p>
+            <li class="flex flex-row items-center items-baseline">
+              <i class="far fa-check-square mr-4 md:mr-6"></i>
+              <p class="my-4 text-2xl">I'll identify the milestones and optimal tools for each unique solution.</p>
             </li>
-            <li class="flex flex-row items-center">
+            <li class="flex flex-row items-center items-baseline">
               <i class="fas fa-pencil-alt mr-3 md:mr-6"></i>
-              <p class="my-4">I will promote ongoing project review to maintain relevant priorities.</p>
+              <p class="my-4 text-2xl">I'll promote ongoing project review to maintain relevant priorities.</p>
             </li>
           </ul>
         </div>
@@ -130,14 +130,14 @@
       </div>
     </section>
     <section id="work">
-      <div class="container md:w-3/4 mx-auto pt-8 pb-20 md:pt-16">
+      <div class="container lg:w-3/4 mx-auto pt-8 pb-20 md:pt-16">
       <h2 class="font-semibold text-2xl md:text-5xl mb-4 text-center text-white">Recent Work</h2>
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Konfío.mx: Loan Simulator 1</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://konfio.mx/simulador-credito-empresarial" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_1.jpg" alt="React loan simulator">
                   </a>
@@ -164,7 +164,7 @@
               </li>
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Konfio.mx: Responsive Landing Page with CSS Shapes and Animations</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_3.jpg" alt="Responsive Landing Page with CSS Shapes and Animations">
                   </a>
@@ -183,7 +183,7 @@
               </li>
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Konfío.mx: Loan Simulator 2</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://konfio.mx/simulador-credito-empresarial" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_2.jpg" alt="Loan Simulator 2">
                   </a>
@@ -210,7 +210,7 @@
               </li>
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Konfío.mx: Responsive Social Proof Landing Page</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://konfio.mx/credito-en-3-pasos" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_4.jpg" alt="Responsive Social Proof Landing Page">
                   </a>
@@ -229,7 +229,7 @@
               </li>
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Personal: Bike Amor</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://bikeamor.herokuapp.com" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_5.jpg" alt="Personal: Bike Amor">
                   </a>
@@ -256,7 +256,7 @@
               </li>
               <li class="glide__slide text-center">
                 <h3 class="my-4 font-semibold mb-8 w-5/6 md:w-full mx-auto text-white">Personal: Hopper</h3>
-                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/3 mx-auto shadow-lg">
+                <div class="bg-white py-4 my-2 rounded w-5/6 md:w-1/2 lg:w-2/5 mx-auto shadow-lg">
                   <a href="https://lance-meier.github.io/JS-Game-Hopper/" target="_blank">
                     <img class="px-6 mx-auto" src="./public/images/work_6.jpg" alt="Personal: Bike Amor">
                   </a>
@@ -279,6 +279,10 @@
               </li>
             </ul>
           </div>
+          <div class="hidden md:block glide__arrows text-white" data-glide-el="controls">
+            <i class="fas fa-chevron-left fa-md glide__arrow glide__arrow--left" data-glide-dir="<"></i>
+            <i class="fas fa-chevron-right fa-md glide__arrow glide__arrow--right" data-glide-dir=">"></i>
+	        </div>
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -291,17 +295,17 @@
       </div>
     </section>
     <section id="contact">
-      <div class="container md:w-3/4 mx-auto pt-16 pb-8 flex flex-col items-center">
+      <div class="container lg:w-3/4 mx-auto pt-16 pb-8 flex flex-col items-center">
         <h2 class="flex font-semibold text-2xl md:text-5xl text-center text-white">Let's Build Something!</h2>
-        <div class="flex flex-col md:flex-row justify-between mt-8 w-full md:w-2/3">
-          <form id="contact-form" class="flex flex-col w-5/6 mx-auto md:w-1/2" action="https://formspree.io/lance@lancemeier.com" method="POST">
+        <div class="flex flex-col md:flex-row justify-around mt-8 w-full md:w-2/3">
+          <form id="contact-form" class="flex flex-col w-5/6 md:w-1/2" action="https://formspree.io/lance@lancemeier.com" method="POST">
             <input class="shadow p-2 rounded" type="text" name="name" placeholder="Name">
             <input class="shadow mt-4 p-2 rounded" type="email" name="_replyto" placeholder="E-mail">
             <textarea class="shadow mt-4 p-2 rounded" name="message" rows="4" placeholder="Message"></textarea>
             <input class="shadow mt-4 p-2 rounded cursor-pointer" type="submit" value="Send">
           </form>
           <div class="flex flex-col text-white">
-            <div class="flex text-center hidden md:block">
+            <div class="flex text-center hidden md:block text-lg">
               <h3>Learn More:</h3>
             </div>
             <div class="flex flex-row mt-8 justify-center">
@@ -326,19 +330,17 @@
       </div>
     </section>
     <footer id="footer">
-      <p class="text-center text-white py-4">&#169; Lance Meier 
+      <p class="text-center text-white py-4 text-lg">&#169; Lance Meier 
         <span><script>document.write(new Date().getFullYear());</script></span>
       </p>
     </footer>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/jquery-parallax.js/parallax.js"></script>
     <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <script>
       var glide = new Glide ('.glide', {
         type: 'slider',
         startAt: 0,
         focusAt: 'center',
-        autoplay: 2500,
+        //autoplay: 2500,
         perView: 1,
       });
       glide.mount();
